@@ -55,7 +55,7 @@ def dingding_send(msg):
 	hmac_code = hmac.new(secret_enc, string_to_sign_enc, digestmod=hashlib.sha256).digest()
 	sign = urllib.parse.quote_plus(base64.b64encode(hmac_code))
 
-	url = 'https://oapi.dingtalk.com/robot/send?access_token=XXXXX&timestamp={}&sign={}'.format(timestamp, sign)
+	url = 'https://XXXX.XXXX.com/robot/send?access_token=XXXXX&timestamp={}&sign={}'.format(timestamp, sign)
 	HEADERS = {
 	"Content-Type": "application/json ;charset=utf-8 "
 	}
